@@ -1,7 +1,7 @@
 class HelloWorldJob
   include Sidekiq::Job
 
-  sidekiq_options retry: 3
+  sidekiq_options retry: 2
 
   def perform(name)
     puts "Starting job for #{name}"
