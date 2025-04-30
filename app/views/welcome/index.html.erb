@@ -1,0 +1,9 @@
+<h1>Welcome to the Active Job Demo</h1>
+
+<% if flash[:notice] %>
+  <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<p>This page demonstrates Active Job in action. Each time you refresh this page, a new user is created and a welcome email job is enqueued.</p>
+
+<p>Check your server logs to see the job being processed!</p>
